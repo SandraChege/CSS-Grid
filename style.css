@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", serif;
+}
+body{
+    background-color: hsl(226, 43%, 10%);
+}
+main{
+    display: grid;
+    width: 70vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "one two three four"
+    "one five six seven";
+    gap:15px;
+    padding: 50px;
+}
+.one{
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    grid-area: one;
+    width: 250px;
+    color: white;
+}
+.toparea{
+    background-color: hsl(246, 80%, 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.one .toparea img{
+    padding-bottom: 20px;
+}
+.one .toparea .toparea1 {
+    padding-bottom: 5px;
+    padding-top: 10px;
+    font-size: 12px;
+}
+.one .toparea .name{
+    font-size: 30px;
+}
+.one .bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 20px;
+    color:hsl(236, 100%, 87%);
+    font-size: 12px;
+}
+.one .bottom p{
+    padding-top: 10px;
+}
+.one .bottom .week{
+    font-weight: bolder;
+    color: white;
+}
+.two{
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 10px;
+    width: 250px;
+    grid-area: two;
+}
+.two .picture{
+    display: flex;
+    justify-content: flex-end;
+}
+.two .cardcontent{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+}
+.two .cardcontent .cardtext{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.two .cardcontent .cardtext h4{
+    font-size: 18px;
+    font-weight: 300;
+}
+.two .cardcontent .cardhrs h3{
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 35px; 
+}
+.two .cardcontent .cardhrs h4{
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+}
+.two .cardcontent .cardhrs h3, .two .cardcontent .cardhrs h4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 15px; 
+}
+/*THREE*/
+.three{
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 10px;
+    width: 250px;
+    grid-area: three; 
+}
+.three .picture{
+    display: flex;
+    justify-content: flex-end;
+}
+.three .cardcontent{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+}
+.three .cardcontent .cardtext{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.three .cardcontent .cardtext h4{
+    font-size: 18px;
+    font-weight: 300;
+}
+.three .cardcontent .cardhrs h3{
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 35px; 
+}
+.three .cardcontent .cardhrs h4{
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+}
+.three .cardcontent .cardhrs h3, .three .cardcontent .cardhrs h4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 16px;
+}
+/* FOUR */
+.four{
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 10px;
+    width: 250px;
+    grid-area: four; 
+}
+.four .picture{
+    display: flex;
+    justify-content: flex-end;
+}
+.four .cardcontent{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+}
+.four .cardcontent .cardtext{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.four .cardcontent .cardtext h4{
+    font-size: 18px;
+    font-weight: 300;
+}
+.four .cardcontent .cardhrs h3{
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 35px; 
+}
+.four .cardcontent .cardhrs h4{
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+}
+.four .cardcontent .cardhrs h3, .four .cardcontent .cardhrs h4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 15px;
+}
+/* FIVE */
+.five{
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 10px;
+    width: 250px;
+    grid-area: five; 
+}
+.five .picture{
+    display: flex;
+    justify-content: flex-end;
+}
+.five .cardcontent{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+}
+.five .cardcontent .cardtext{
+    display: flex;
+    justify-content: space-between;
+}
+.five .cardcontent .cardtext h4{
+    font-size: 18px;
+    font-weight: 300;
+}
+.five .cardcontent .cardhrs h3{
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 35px; 
+}
+.five .cardcontent .cardhrs h4{
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+}
+.five .cardcontent .cardhrs h3, .five .cardcontent .cardhrs h4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8%;
+}
+/* SIX */
+.six{
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 10px;
+    width: 250px;
+    grid-area: six; 
+}
+.six .picture{
+    display: flex;
+    justify-content: flex-end;
+}
+.six .cardcontent{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+}
+.six .cardcontent .cardtext{
+    display: flex;
+    justify-content: space-between;
+}
+.six .cardcontent .cardtext h4{
+    font-size: 18px;
+    font-weight: 300;
+}
+.six .cardcontent .cardhrs h3{
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 35px; 
+}
+.six .cardcontent .cardhrs h4{
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+}
+.six .cardcontent .cardhrs h3, .six .cardcontent .cardhrs h4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+}
+/* SEVEN */
+.seven{
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 10px;
+    width: 250px;
+    grid-area: seven; 
+}
+.seven .picture{
+    display: flex;
+    justify-content: flex-end;
+}
+.seven .cardcontent{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+}
+.seven .cardcontent .cardtext{
+    display: flex;  
+    justify-content: space-between;
+    padding-top: 20px;/*Here from 0*/
+}
+.seven .cardcontent .cardtext h4{
+    font-size: 18px;
+    font-weight: 300;
+}
+.seven .cardcontent .cardhrs h3{
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 35px; 
+}
+.seven .cardcontent .cardhrs h4{
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+}
+.seven .cardcontent .cardhrs h3, .seven .cardcontent .cardhrs h4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 18px;/*Here from 10*/
+}
