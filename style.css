@@ -26,7 +26,7 @@ main{
     color: white;
 }
 .toparea{
-    background-color: hsl(246, 80%, 60%);
+    background-color: hsl(246, 92%, 64%);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
